@@ -10,7 +10,9 @@ s.connect((host, port))
 while True:
     try:
         data = s.recv(1024)
-        print(data[:].decode("utf-8"))
+        if len(data) <= 0:
+            break
+        print(data.decode("utf-8"))
 
     except socket.error as msg:
         print("Server closed the connection..exiting")

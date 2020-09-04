@@ -55,8 +55,7 @@ def accepting_connections():
 
             all_connections.append(conn)
             all_address.append(address)
-
-            print("Connection established with "+ address[0]); # Displaying only the IP address
+            print("Connection established with "+ address[0]) # Displaying only the IP address
 
         except:
             print("Error accepting connections")
