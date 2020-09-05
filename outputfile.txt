@@ -1,4 +1,2 @@
-Connection established with ('192.168.0.192', 55954) 
-Connection established with ('192.168.0.192', 55956) 
-Connection established with ('192.168.0.192', 55958) 
-Connection established with ('192.168.0.192', 55960) 
+Connection established with ('192.168.0.192', 41218) 
+Connection established with ('192.168.0.192', 41224) 

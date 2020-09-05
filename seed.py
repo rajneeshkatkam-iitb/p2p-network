@@ -30,12 +30,12 @@ def create_and_run_threads():
 def work():
     for _ in range(NUMBER_OF_THREADS):
         x = queue.get()
-        if x == 1:
+        if x == 1:             #Thread 1 tasks
             create_socket()
             bind_socket()
             accepting_connections()
 
-        if x == 2:
+        if x == 2:             #Thread 2 tasks
             start_shell()
 
         queue.task_done()
@@ -72,7 +72,6 @@ def exit_command():
     del all_connections[:]
     del all_address[:]
     s.close()
-
 
 
 # creating object of socket
@@ -116,6 +115,8 @@ def accepting_connections():
             conn, address = s.accept()
             #s.setblocking(1)  # prevents timeout
 
+            #response="New connection"
+            #old="Delete IP3"
             all_connections.append(conn)
             all_address.append(address)
             out_string=f"Connection established with {address} \n"
