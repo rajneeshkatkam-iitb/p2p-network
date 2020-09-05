@@ -1,2 +1,2 @@
-# p2p-network
-p2p network based on python
+# network Model
+network based on python
